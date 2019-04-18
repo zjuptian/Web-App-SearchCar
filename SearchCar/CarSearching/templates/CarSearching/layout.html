@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小田查车</title>
+</head>
+<body>
+    <div class="top" style=" width: 100%;height:50px;background-color: black;">
+        <div class="top_content" style="width:75%;height:50px;margin: 0px auto;background: aquamarine;">
+            <h1 style="text-align: center;">T.P. Search Car</h1>
+        </div>
+    </div>
+    <br>
+    <div align="center" >
+        <img  style="transform: scale(1)" src="{% static "car2.png" %}"/ >
+    <form action="/CarSearching/car_list" method="get">
+        <p style="text-align: center;font-size: larger;font-style: oblique;">Please enter the car brand that you want to search for:</p>
+        <input type="text" name="brand">
+        <input type="submit" value="提交">
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car list</title>
+</head>
+<body>
+<div class="top" style=" width: 100%;height:50px;background-color: black;">
+        <div class="top_content" style="width:75%;height:50px;margin: 0px auto;background: aquamarine;">
+            <h1 style="text-align: center;">T.P. Search Car</h1>
+        </div>
+    </div>
+<a href='/'><button>返回输入界面</button></a>
+<br>
+<br>
+    <ul style="display: inline;margin: auto">
+
+        {% for car in cars %}
+        <li style="display: inline"><a href={{ car.car_web }} target="myframe"><button>{{ car.car_name }}</button></a></li>
+        {% endfor %}
+
+    </ul>
+    <br>
+    <br>
+    <iframe src="/CarSearching/framec" frameborder="0" width=100% height="800px" name="myframe">
+
+    </iframe>
+</table>
+</body>
+</html>
